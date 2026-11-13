@@ -1,0 +1,16 @@
+[
+  { "port": "20 / 21", "protocol": "FTP", "transport": "TCP", "purpose": "File Transfer Protocol (data / control)" },
+  { "port": "22", "protocol": "SSH / SFTP / SCP", "transport": "TCP", "purpose": "Encrypted remote shell and file transfer" },
+  { "port": "23", "protocol": "Telnet", "transport": "TCP", "purpose": "Unencrypted remote terminal" },
+  { "port": "25", "protocol": "SMTP", "transport": "TCP", "purpose": "Outgoing email relay" },
+  { "port": "53", "protocol": "DNS", "transport": "TCP / UDP", "purpose": "Domain name resolution" },
+  { "port": "67 / 68", "protocol": "DHCP", "transport": "UDP", "purpose": "Dynamic IP address assignment" },
+  { "port": "80", "protocol": "HTTP", "transport": "TCP", "purpose": "Unencrypted web traffic" },
+  { "port": "110", "protocol": "POP3", "transport": "TCP", "purpose": "Email retrieval (downloads from server)" },
+  { "port": "143", "protocol": "IMAP", "transport": "TCP", "purpose": "Email synchronization on server" },
+  { "port": "161 / 162", "protocol": "SNMP", "transport": "UDP", "purpose": "Network device monitoring and traps" },
+  { "port": "389", "protocol": "LDAP", "transport": "TCP / UDP", "purpose": "Directory services authentication" },
+  { "port": "443", "protocol": "HTTPS", "transport": "TCP", "purpose": "TLS-encrypted web traffic" },
+  { "port": "445", "protocol": "SMB / CIFS", "transport": "TCP", "purpose": "Windows file and printer sharing" },
+  { "port": "3389", "protocol": "RDP", "transport": "TCP / UDP", "purpose": "Remote Desktop Protocol" }
+]

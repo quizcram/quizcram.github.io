@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizCram Open Reference Data — CompTIA Ports, CLSI Order of Draw &amp; FDA Food Code</title>
+  <meta name="description" content="Open-source MIT-licensed reference tables and JSON datasets for CompTIA A+ ports, CLSI PRE02 phlebotomy order of draw, and 2022 FDA Food Code temperatures." />
+  <link rel="canonical" href="https://quizcram.github.io/" />
+  <style>
+    :root { --bg: #f8fafc; --card: #ffffff; --text: #0f172a; --muted: #475569; --border: #e2e8f0; --accent: #1d4ed8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    main { max-width: 920px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    header { margin-bottom: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 1.5rem; }
+    h1 { font-size: 1.85rem; margin: 0 0 0.5rem; }
+    h2 { font-size: 1.3rem; margin: 2.25rem 0 0.75rem; }
+    p { margin: 0 0 1rem; color: var(--muted); }
+    a { color: var(--accent); text-decoration: underline; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; margin-bottom: 1.5rem; overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th, td { text-align: left; padding: 0.55rem 0.75rem; border-bottom: 1px solid var(--border); }
+    th { font-weight: 600; color: var(--text); background: #f1f5f9; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 0.75rem; }
+    .pill-link { display: block; padding: 0.75rem 1rem; background: var(--card); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--text); font-weight: 500; }
+    .pill-link:hover { border-color: var(--accent); }
+    .pill-link span { display: block; font-size: 0.82rem; font-weight: 400; color: var(--muted); margin-top: 0.2rem; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--border); font-size: 0.88rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>QuizCram Open Reference Data</h1>
+      <p>MIT-licensed reference tables and JSON datasets for healthcare, food safety, and IT certification exams. Maintained by <a href="https://quizcram.com/">QuizCram</a> (<a href="https://github.com/quizcram/quizcram.github.io">GitHub source</a>).</p>
+    </header>
+
+    <section aria-labelledby="tools-heading">
+      <h2 id="tools-heading">Interactive Reference Tools &amp; Practice Hubs</h2>
+      <div class="grid">
+        <a class="pill-link" href="https://quizcram.com/tools/phlebotomy-order-of-draw">
+          Phlebotomy Order of Draw Chart
+          <span>Interactive CLSI PRE02 tube sequence builder &amp; printable chart</span>
+        </a>
+        <a class="pill-link" href="https://quizcram.com/tools/ekg-lead-placement">
+          12-Lead EKG Electrode Placement Chart
+          <span>Anatomical V1-V6 and limb lead placement reference</span>
+        </a>
+        <a class="pill-link" href="https://quizcram.com/tools/food-temperature-chart">
+          Food Safety Temperature Chart
+          <span>FDA Food Code 2022 cooking, holding &amp; cooling limits</span>
+        </a>
+        <a class="pill-link" href="https://quizcram.com/cna-practice-test">
+          CNA Practice Test Hub
+          <span>40 free CNA questions, skills guide &amp; state rules</span>
+        </a>
+        <a class="pill-link" href="https://quizcram.com/ccma-practice-test">
+          NHA CCMA Practice Test Hub
+          <span>Medical assisting blueprint, EKG &amp; clinical prep</span>
+        </a>
+        <a class="pill-link" href="https://quizcram.com/phlebotomy-practice-test">
+          NHA CPT Phlebotomy Practice Test
+          <span>Venipuncture, order of draw &amp; specimen handling</span>
+        </a>
+        <a class="pill-link" href="https://quizcram.com/servsafe-manager-practice-test">
+          ServSafe Manager Practice Test
+          <span>FDA Food Code 2022 exam prep &amp; cheat sheet</span>
+        </a>
+        <a class="pill-link" href="https://quizcram.com/comptia-a-plus-practice-test">
+          CompTIA A+ Core 1 (220-1201) Hub
+          <span>Ports, cables, hardware &amp; troubleshooting prep</span>
+        </a>
+        <a class="pill-link" href="https://quizcram.com/comptia-a-plus-core-2-practice-test">
+          CompTIA A+ Core 2 (220-1202) Hub
+          <span>OS, security, software troubleshooting &amp; operations</span>
+        </a>
+        <a class="pill-link" href="https://quizcram.com/comptia-network-plus-practice-test">
+          CompTIA Network+ (N10-009) Hub
+          <span>Networking concepts, routing, switching &amp; security</span>
+        </a>
+        <a class="pill-link" href="https://quizcram.com/comptia-security-plus-practice-test">
+          CompTIA Security+ (SY0-701) Hub
+          <span>Threats, architecture, operations &amp; governance</span>
+        </a>
+      </div>
+    </section>
+
+    <section aria-labelledby="clsi-heading">
+      <h2 id="clsi-heading">1. CLSI PRE02 Phlebotomy Order of Draw (<a href="data/clsi-order-of-draw.json">JSON</a>)</h2>
+      <p>Full interactive builder and capillary order available on the <a href="https://quizcram.com/tools/phlebotomy-order-of-draw">QuizCram Phlebotomy Order of Draw Chart</a> and <a href="https://quizcram.com/phlebotomy-practice-test/questions">free NHA CPT practice questions</a>.</p>
+      <div class="card">
+        <table>
+          <thead>
+            <tr><th>Order</th><th>Tube / Color</th><th>Additive</th><th>Inversions</th><th>Common Tests</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Culture bottles / Yellow (SPS)</td><td>Culture broth (SPS)</td><td>8-10 (SPS)</td><td>Blood cultures</td></tr>
+            <tr><td>2</td><td>Light blue</td><td>Sodium citrate (9:1)</td><td>3-4</td><td>PT/INR, aPTT, D-dimer</td></tr>
+            <tr><td>3</td><td>Red, gold, or tiger-top (SST)</td><td>Clot activator / gel</td><td>5 (plastic); 0 (glass)</td><td>BMP, CMP, Lipid panel, TSH</td></tr>
+            <tr><td>4</td><td>Green (light or dark)</td><td>Lithium / sodium heparin</td><td>8-10</td><td>STAT electrolytes, Troponin</td></tr>
+            <tr><td>5</td><td>Lavender / Purple</td><td>K2 / K3 EDTA</td><td>8-10</td><td>CBC, HbA1c, ESR</td></tr>
+            <tr><td>6</td><td>Gray</td><td>Sodium fluoride / K oxalate</td><td>8-10</td><td>Glucose, Lactate</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="fda-heading">
+      <h2 id="fda-heading">2. FDA Food Code 2022 Cooking &amp; Cooling Temperatures (<a href="data/fda-food-code-temps.json">JSON</a>)</h2>
+      <p>Complete temperature reference and reheating rules: <a href="https://quizcram.com/tools/food-temperature-chart">Food Safety Temperature Chart</a> and <a href="https://quizcram.com/servsafe-manager-practice-test/questions">ServSafe Manager practice questions</a>.</p>
+      <div class="card">
+        <table>
+          <thead>
+            <tr><th>Food or Step</th><th>Temperature</th><th>Hold / Window</th><th>Food Code</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Poultry, stuffed meats, wild game</td><td>165&deg;F (74&deg;C)</td><td>Under 1 second</td><td>3-401.11(A)(3)</td></tr>
+            <tr><td>Ground meat/fish, mechanically tenderized</td><td>155&deg;F (68&deg;C)</td><td>17 seconds</td><td>3-401.11(A)(2)</td></tr>
+            <tr><td>Whole cuts (beef, pork, fish, immediate eggs)</td><td>145&deg;F (63&deg;C)</td><td>15 seconds</td><td>3-401.11(A)(1)</td></tr>
+            <tr><td>Whole roasts (beef, pork, ham)</td><td>145&deg;F (63&deg;C)</td><td>4 minutes</td><td>3-401.11(B)</td></tr>
+            <tr><td>Fruits &amp; vegetables for hot holding</td><td>135&deg;F (57&deg;C)</td><td>Immediate</td><td>3-401.13</td></tr>
+            <tr><td>Two-stage cooling</td><td>135&deg;F &rarr; 70&deg;F &rarr; 41&deg;F</td><td>2h to 70&deg;F; 6h total to 41&deg;F</td><td>3-501.14</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="ports-heading">
+      <h2 id="ports-heading">3. CompTIA A+ Core 1 (220-1201) Common Ports (<a href="data/comptia-a-plus-ports.json">JSON</a>)</h2>
+      <p>Full guide covering IP ranges, Wi-Fi standards, cables, and RAID: <a href="https://quizcram.com/resources/comptia-a-plus-core-1-ports-cables-numbers">CompTIA A+ Core 1 Ports, Wi-Fi, Cables and RAID</a> and <a href="https://quizcram.com/comptia-a-plus-practice-test/questions">free CompTIA A+ questions</a>.</p>
+      <div class="card">
+        <table>
+          <thead>
+            <tr><th>Port</th><th>Protocol</th><th>Transport</th><th>Purpose</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>20 / 21</td><td>FTP</td><td>TCP</td><td>File Transfer Protocol (data / control)</td></tr>
+            <tr><td>22</td><td>SSH / SFTP / SCP</td><td>TCP</td><td>Encrypted remote shell and file transfer</td></tr>
+            <tr><td>23</td><td>Telnet</td><td>TCP</td><td>Unencrypted remote terminal</td></tr>
+            <tr><td>25</td><td>SMTP</td><td>TCP</td><td>Outgoing email relay</td></tr>
+            <tr><td>53</td><td>DNS</td><td>TCP / UDP</td><td>Domain name resolution</td></tr>
+            <tr><td>67 / 68</td><td>DHCP</td><td>UDP</td><td>Dynamic IP address assignment</td></tr>
+            <tr><td>80</td><td>HTTP</td><td>TCP</td><td>Unencrypted web traffic</td></tr>
+            <tr><td>110</td><td>POP3</td><td>TCP</td><td>Email retrieval</td></tr>
+            <tr><td>143</td><td>IMAP</td><td>TCP</td><td>Email synchronization on server</td></tr>
+            <tr><td>161 / 162</td><td>SNMP</td><td>UDP</td><td>Network device monitoring and traps</td></tr>
+            <tr><td>389</td><td>LDAP</td><td>TCP / UDP</td><td>Directory services authentication</td></tr>
+            <tr><td>443</td><td>HTTPS</td><td>TCP</td><td>TLS-encrypted web traffic</td></tr>
+            <tr><td>445</td><td>SMB / CIFS</td><td>TCP</td><td>Windows file and printer sharing</td></tr>
+            <tr><td>3389</td><td>RDP</td><td>TCP / UDP</td><td>Remote Desktop Protocol</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      MIT License &middot; Data &amp; tables maintained by <a href="https://quizcram.com/">QuizCram</a> &middot; <a href="https://quizcram.com/exams">All Exams</a> &middot; <a href="https://quizcram.com/resources">Study Guides</a>
+    </footer>
+  </main>
+</body>
+</html>

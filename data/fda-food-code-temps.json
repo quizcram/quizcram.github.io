@@ -1,0 +1,58 @@
+[
+  {
+    "category": "Minimum Internal Cooking",
+    "food_or_step": "Poultry; stuffed meat, fish, pasta, or poultry; stuffing with meat; wild game",
+    "temperature_f": 165,
+    "temperature_c": 74,
+    "hold_time": "Under 1 second",
+    "food_code_section": "3-401.11(A)(3)"
+  },
+  {
+    "category": "Minimum Internal Cooking",
+    "food_or_step": "Ground meat or fish, injected or mechanically tenderized meat, ratites, raw eggs not served immediately",
+    "temperature_f": 155,
+    "temperature_c": 68,
+    "hold_time": "17 seconds",
+    "food_code_section": "3-401.11(A)(2)"
+  },
+  {
+    "category": "Minimum Internal Cooking",
+    "food_or_step": "Whole cuts of meat and pork, fish, seafood, raw eggs cooked for immediate service",
+    "temperature_f": 145,
+    "temperature_c": 63,
+    "hold_time": "15 seconds",
+    "food_code_section": "3-401.11(A)(1)"
+  },
+  {
+    "category": "Minimum Internal Cooking",
+    "food_or_step": "Whole roasts (beef, pork, corned beef, ham)",
+    "temperature_f": 145,
+    "temperature_c": 63,
+    "hold_time": "4 minutes",
+    "food_code_section": "3-401.11(B)"
+  },
+  {
+    "category": "Minimum Internal Cooking",
+    "food_or_step": "Fruits and vegetables cooked for hot holding",
+    "temperature_f": 135,
+    "temperature_c": 57,
+    "hold_time": "Immediate",
+    "food_code_section": "3-401.13"
+  },
+  {
+    "category": "Holding & Cooling",
+    "food_or_step": "Temperature Danger Zone",
+    "temperature_f": "41-135",
+    "temperature_c": "5-57",
+    "hold_time": "Minimize time",
+    "food_code_section": "FDA Food Code 2022"
+  },
+  {
+    "category": "Holding & Cooling",
+    "food_or_step": "Two-stage cooling",
+    "temperature_f": "135 -> 70 -> 41",
+    "temperature_c": "57 -> 21 -> 5",
+    "hold_time": "2 hours to 70F, 6 hours total to 41F",
+    "food_code_section": "3-501.14"
+  }
+]

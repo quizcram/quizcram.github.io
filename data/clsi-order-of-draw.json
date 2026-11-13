@@ -1,0 +1,50 @@
+[
+  {
+    "order": 1,
+    "group": "Blood cultures",
+    "tube_color": "Culture bottles / Yellow (SPS)",
+    "additive": "Culture broth (SPS in yellow tubes)",
+    "inversions": "8-10 (SPS tube); bottles per manufacturer",
+    "common_tests": ["Blood cultures for bacteria and fungi"]
+  },
+  {
+    "order": 2,
+    "group": "Sodium citrate",
+    "tube_color": "Light blue",
+    "additive": "Sodium citrate (9 parts blood to 1 part citrate)",
+    "inversions": "3-4",
+    "common_tests": ["PT/INR", "aPTT", "Fibrinogen", "D-dimer"]
+  },
+  {
+    "order": 3,
+    "group": "Serum tubes",
+    "tube_color": "Red, gold, or tiger-top (SST)",
+    "additive": "Clot activator / gel separator",
+    "inversions": "5 (plastic red/gold); 0 (plain glass)",
+    "common_tests": ["BMP", "CMP", "Lipid panel", "TSH"]
+  },
+  {
+    "order": 4,
+    "group": "Heparin",
+    "tube_color": "Green (light or dark)",
+    "additive": "Lithium heparin or sodium heparin",
+    "inversions": "8-10",
+    "common_tests": ["STAT electrolytes", "Troponin", "Ammonia"]
+  },
+  {
+    "order": 5,
+    "group": "EDTA",
+    "tube_color": "Lavender / Purple",
+    "additive": "K2 or K3 EDTA",
+    "inversions": "8-10",
+    "common_tests": ["CBC", "HbA1c", "ESR", "Blood bank (pink)"]
+  },
+  {
+    "order": 6,
+    "group": "Fluoride",
+    "tube_color": "Gray",
+    "additive": "Sodium fluoride / potassium oxalate",
+    "inversions": "8-10",
+    "common_tests": ["Glucose", "Lactate", "Blood alcohol"]
+  }
+]
